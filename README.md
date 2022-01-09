@@ -6,7 +6,7 @@
 
 ## How to Run :-
 ```bash
-$ python3 weather.py 
+$ pip3 install git+https://github.com/techyminati/weather 
 ```
 
 ## Note ##
