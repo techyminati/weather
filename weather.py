@@ -19,9 +19,14 @@ if response.status_code == 200: # parse the json now
    temperature = main['temp']
    humidity = main['humidity']
    pressure = main['pressure']
+   feels_like = main['feels_like']
    report = data['weather']
+   sys = data['sys']
+   country = sys['country']
    print(f"{location:-^30}")
+   print(f"Country: {country}")
    print(f"Temperature: {temperature} F")
+   print(f"Feels Like: {feels_like} F")
    print(f"Humidity: {humidity}")
    print(f"Pressure: {pressure}")
    print(f"Weather Report: {report[0]['description']}")
